@@ -9,10 +9,10 @@
 <body>
     <div class="container-left">
         <div class="header">
-            <img src="" alt="">
-            <h1></h1>
+           
+            <h1>Cosimc Cats</h1>
         </div>
-        
+        <!-- <img src="images/IMG_6116.jpeg" class="luna" alt=""> -->
         
     </div>
     <div class="right-side">
@@ -21,31 +21,39 @@
             This is not a real service! It is a knowen fact that looking at pictures of cats 
             releases stress and reduceces the chances of a heart attack! Make an account 
             to view hundreds of pictures of cats and kittens of all varietys!
+            <p class="hook"> You know you want to.</p>
         </div>
         <div class="form-controls">
-            <h1>Lets do this!</h1>
-        <fieldset>
-            <label for="firstname">First Name</label>
-            <input type="text" name="userFirstName" id="firstname">
-            <label for="lastname">Last Name</label>
-            <input type="text" name="userLastName" id="lastname">
-        </fieldset>
-        <fieldset>
-            <label for="email">Email</label>
-            <input type="email" name="userEmail" id="email">
-            <label for="phone#">Phone Number</label>
-            <input type="tel" name="userPhoneNumber" id="phone#">
-        </fieldset>
-        <fieldset>
-            <label for="password">Password</label>
-            <input type="password" name="userPassword" id="password">
-            <label for="passwordConfirm">Confirm Password</label>
-            <input type="password" name="userPassword" id="passwordConfirm">
-        </fieldset>
+                <h1>Lets do this!</h1>
+                <legend>Fields marked with * required</legend>
+                 <div class=" inputs">
+                    <div class="input1">
+                        <label for="firstname" aria-label="required">*First Name
+                        <input type="text" name="userFirstName" id="firstname" required></label>
+                        
+                        <label for="email" aria-label="required">*Email
+                        <input type="email" name="userEmail" id="email" required placeholder="bob@gmail.com"></label>
+                        
+                        <label for="password" aria-label="required" >*Password (6-20 characters)
+                        <input type="password" name="userPassword" id="password" minlength="6" maxlength="20" required ></label>
+                    </div>
+                    <div class="input2">
+                        <label for="lastname" aria-label="required">*Last Name
+                        <input type="text" name="userLastName" id="lastname" required></label>
+                    
+                        <label for="phone#" aria-label="required">Phone Number 
+                        <input type="tel" name="userPhoneNumber" id="phone#" required placeholder="xxx-xxx-xxxx"></label>
+                        
+                        <label for="passwordConfirm" aria-label="required">*Confirm Password (6-20 characters)
+                        <input type="password" name="userPassword" id="passwordConfirm" minlength="6" maxlength="20" required ></label>
+                </div>
+            </div>
         </div>
-        <button type="submit"></button>
-        <div> already have an account?
-            <a href="">Log in</a>
+        <div class="signup">
+            <button type="submit">Create Account</button>
+            <div> already have an account?
+                <a href="">Log in</a>
+            </div>
         </div>
       </form>
     </div>
